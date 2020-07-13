@@ -10,6 +10,9 @@ from PIL import Image, ImageFont, ImageDraw
 # ---------------------------
 # Vars
 # ---------------------------
+MODE = "debug" # Change to None to post on FB
+
+
 parts = []
 config = []
 msg = ""
@@ -332,29 +335,30 @@ class versus:
         print("--- Rendering versus image")
         self.image()  
 
-        print("--- Posting versus")
-        face = FB()
-        graph_response = face.post(msg, 'tmp/versus_image.png')
+        if MODE != "DEBUG":
+            print("--- Posting versus")
+            face = FB()
+            graph_response = face.post(msg, 'tmp/versus_image.png')
 
-        print("--- Commenting new post")
-        if config['last_post']['post_id'] != "0":
-            face.comment_photo(graph_response['id'], wmsg, 'tmp/winner_image.png')
-        face.comment(graph_response['id'], "Love VersusBot? support me <3\nhttps://www.buymeacoffee.com/VersusBot")
+            print("--- Commenting new post")
+            if config['last_post']['post_id'] != "0":
+                face.comment_photo(graph_response['id'], wmsg, 'tmp/winner_image.png')
+            face.comment(graph_response['id'], "Love VersusBot? support me <3\nhttps://www.buymeacoffee.com/VersusBot")
 
-        print("--- Saving config")
-        config['last_post']['type'] = self.duel_type
-        config['last_post']['post_id'] = graph_response['id']
-        config['last_post']['fighter1'] = self.fighters[0]['figther_id']
-        config['last_post']['fighter2'] = self.fighters[1]['figther_id']
-        config['last_post']['reaction1'] = self.reactions[0]
-        config['last_post']['reaction2'] = self.reactions[1]
-        if self.duel_type >= 1: 
-            config['last_post']['fighter3'] = self.fighters[2]['figther_id']
-            config['last_post']['reaction3'] = self.reactions[2]
-        if self.duel_type == 2: 
-            config['last_post']['fighter4'] = self.fighters[3]['figther_id']
-            config['last_post']['reaction4'] = self.reactions[3]
-        save_config()
+            print("--- Saving config")
+            config['last_post']['type'] = self.duel_type
+            config['last_post']['post_id'] = graph_response['id']
+            config['last_post']['fighter1'] = self.fighters[0]['figther_id']
+            config['last_post']['fighter2'] = self.fighters[1]['figther_id']
+            config['last_post']['reaction1'] = self.reactions[0]
+            config['last_post']['reaction2'] = self.reactions[1]
+            if self.duel_type >= 1: 
+                config['last_post']['fighter3'] = self.fighters[2]['figther_id']
+                config['last_post']['reaction3'] = self.reactions[2]
+            if self.duel_type == 2: 
+                config['last_post']['fighter4'] = self.fighters[3]['figther_id']
+                config['last_post']['reaction4'] = self.reactions[3]
+            save_config()
     def image(self):
         # // Create blank image
         img_final = Image.new('RGBA', (1000, 1000), (255, 255, 255, 255))
@@ -432,7 +436,7 @@ def main():
         print("--- Tournament mode")
     else:
         print("--- Normal mode")
-        if config['last_post']['post_id'] != "0":
+        if config['last_post']['post_id'] != "0" or MODE != "DEBUG":
             print("--- Getting last round winner")
             last_round()
         versus()
