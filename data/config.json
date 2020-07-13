@@ -1,0 +1,16 @@
+{
+    "access_token": "PAGE-TOKEN",
+    "page_id": "PAGE-ID",
+    "last_post": {
+        "type": 2,
+        "post_id": "3066691113417420",
+        "fighter1": 241,
+        "fighter2": 347,
+        "fighter3": 168,
+        "fighter4": 433,
+        "reaction1": "Haha",
+        "reaction2": "Wow",
+        "reaction3": "Angry",
+        "reaction4": "Sad"
+    }
+}
