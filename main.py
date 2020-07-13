@@ -335,7 +335,7 @@ class versus:
         print("--- Rendering versus image")
         self.image()  
 
-        if MODE != "DEBUG":
+        if MODE != "debug":
             print("--- Posting versus")
             face = FB()
             graph_response = face.post(msg, 'tmp/versus_image.png')
@@ -431,12 +431,11 @@ def main():
     print("--- Loading...")
     load_config()
     load_parts()
-    print(config['last_post']['post_id'])
     if "tournament" in sys.argv:
         print("--- Tournament mode")
     else:
         print("--- Normal mode")
-        if config['last_post']['post_id'] != "0" or MODE != "DEBUG":
+        if config['last_post']['post_id'] != "0" and MODE != "debug" or MODE != "debug":
             print("--- Getting last round winner")
             last_round()
         versus()
