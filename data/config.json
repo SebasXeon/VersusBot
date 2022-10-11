@@ -1,16 +1,15 @@
 {
-    "access_token": "PAGE-TOKEN",
-    "page_id": "PAGE-ID",
-    "last_post": {
-        "type": 2,
-        "post_id": "3066691113417420",
-        "fighter1": 241,
-        "fighter2": 347,
-        "fighter3": 168,
-        "fighter4": 433,
-        "reaction1": "Haha",
-        "reaction2": "Wow",
-        "reaction3": "Angry",
-        "reaction4": "Sad"
-    }
+    "page_id": "PAGE_ID",
+    "page_token": "FACEBOOK_GRAPH_TOKEN",
+    "last_round_id": "0",
+    "last_round": [
+        {
+            "_id": "632e82f60876014dc6ff88db",
+            "reaction": "Sad"
+        },
+        {
+            "_id": "632e4a0f3eddb7c4c8c847b7",
+            "reaction": "Wow"
+        }
+    ]
 }
