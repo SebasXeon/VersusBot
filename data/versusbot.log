@@ -1,0 +1,44 @@
+06/22/2024 03:41:47 AM - INFO: Starting VersusBot
+06/22/2024 03:42:22 AM - INFO: Starting VersusBot
+06/22/2024 03:42:22 AM - INFO: Started scheduler
+06/22/2024 03:42:37 AM - INFO: Starting VersusBot
+06/22/2024 03:42:37 AM - INFO: Started scheduler
+06/22/2024 03:43:37 AM - DEBUG: Running job Job(interval=1, unit=minutes, do=run_tasks, args=(), kwargs={})
+06/22/2024 03:44:37 AM - DEBUG: Running job Job(interval=1, unit=minutes, do=run_tasks, args=(), kwargs={})
+06/22/2024 03:45:18 AM - INFO: Starting VersusBot
+06/22/2024 03:45:18 AM - INFO: Started scheduler
+06/22/2024 03:46:18 AM - DEBUG: Running job Job(interval=1, unit=minutes, do=run_tasks, args=(), kwargs={})
+06/22/2024 03:47:18 AM - DEBUG: Running job Job(interval=1, unit=minutes, do=run_tasks, args=(), kwargs={})
+06/22/2024 03:47:38 AM - INFO: Starting VersusBot
+06/22/2024 03:47:38 AM - INFO: Started scheduler
+06/22/2024 03:48:25 AM - INFO: Starting VersusBot
+06/22/2024 03:48:25 AM - INFO: Started scheduler
+06/22/2024 03:49:25 AM - DEBUG: Running job Job(interval=1, unit=minutes, do=run_tasks, args=(), kwargs={})
+06/22/2024 03:50:44 AM - INFO: Starting VersusBot
+06/22/2024 03:50:44 AM - INFO: Started scheduler
+06/22/2024 03:51:44 AM - DEBUG: Running job Job(interval=1, unit=minutes, do=run_tasks, args=(), kwargs={})
+06/22/2024 03:53:04 AM - INFO: Starting VersusBot
+06/22/2024 03:53:04 AM - INFO: Started scheduler
+06/22/2024 03:54:04 AM - DEBUG: Running job Job(interval=1, unit=minutes, do=run_tasks, args=(), kwargs={})
+06/22/2024 03:55:04 AM - DEBUG: Running job Job(interval=1, unit=minutes, do=run_tasks, args=(), kwargs={})
+06/22/2024 03:55:13 AM - INFO: Starting VersusBot
+06/22/2024 03:55:13 AM - INFO: Started scheduler
+06/22/2024 03:56:13 AM - DEBUG: Running job Job(interval=1, unit=minutes, do=run_tasks, args=(), kwargs={})
+06/22/2024 03:57:13 AM - DEBUG: Running job Job(interval=1, unit=minutes, do=run_tasks, args=(), kwargs={})
+06/22/2024 03:58:13 AM - DEBUG: Running job Job(interval=1, unit=minutes, do=run_tasks, args=(), kwargs={})
+06/22/2024 03:58:25 AM - INFO: Starting VersusBot
+06/22/2024 03:58:25 AM - INFO: Started scheduler
+06/22/2024 03:58:39 AM - INFO: Starting VersusBot
+06/22/2024 03:58:39 AM - INFO: Started scheduler
+06/22/2024 03:59:39 AM - DEBUG: Running job Job(interval=1, unit=minutes, do=run_tasks, args=(), kwargs={})
+06/22/2024 04:00:39 AM - DEBUG: Running job Job(interval=1, unit=minutes, do=run_tasks, args=(), kwargs={})
+06/22/2024 04:00:39 AM - INFO: Running task Common Versus
+06/22/2024 04:01:39 AM - DEBUG: Running job Job(interval=1, unit=minutes, do=run_tasks, args=(), kwargs={})
+06/22/2024 04:01:42 AM - INFO: Starting VersusBot
+06/22/2024 04:01:42 AM - INFO: Started scheduler
+06/22/2024 04:02:42 AM - DEBUG: Running job Job(interval=1, unit=minutes, do=run_tasks, args=(), kwargs={})
+06/22/2024 04:03:42 AM - DEBUG: Running job Job(interval=1, unit=minutes, do=run_tasks, args=(), kwargs={})
+06/22/2024 04:04:42 AM - DEBUG: Running job Job(interval=1, unit=minutes, do=run_tasks, args=(), kwargs={})
+06/22/2024 04:05:42 AM - DEBUG: Running job Job(interval=1, unit=minutes, do=run_tasks, args=(), kwargs={})
+06/22/2024 04:05:43 AM - INFO: Running task Common Versus
+06/22/2024 04:06:43 AM - DEBUG: Running job Job(interval=1, unit=minutes, do=run_tasks, args=(), kwargs={})
