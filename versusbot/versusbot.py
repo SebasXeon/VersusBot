@@ -6,24 +6,29 @@
 # ---------------------------
 from logger import logger
 from config import Settings
-from scheduler import scheduler
+
+import typer
 
 # ---------------------------
-# settings
+# setup
 # ---------------------------
+app = typer.Typer()
 settings = Settings()
 
 # ---------------------------
-# main
+# Commands
 # ---------------------------
-def main():
-    schedule = scheduler()
-    schedule.start()
+@app.command()
+def versus():
+    print(f"Versus")
+
+@app.command()
+def tournament():
+    print(f"Tournament")
 
 # ---------------------------
 # run
 # ---------------------------
 
 if __name__ == "__main__":
-    logger.info('Starting VersusBot')
-    main()
+    app()
